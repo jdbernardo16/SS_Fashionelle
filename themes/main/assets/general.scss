@@ -1,0 +1,110 @@
+@font-face {
+  font-family: flanella;
+  src: url(Flanella.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins-Regular.ttf);
+}
+
+
+#main {
+	position: relative;
+  overflow: hidden;
+  margin-top: 100px;
+
+  .wrapper {
+    max-width: 1400px;
+  }
+
+}
+
+.page-errorCon {
+  height: 70vh;
+
+  h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  p {
+    line-height: 1.5em;
+  }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: orange; 
+}
+
+/*****
+** SLICK DOTS
+*****/
+.slick-dots {
+  margin-top: 20px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    width: 20px;
+    font-size: 8px;
+    color: transparent;
+    background: orange;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active {
+}
+
+.slick-dots li button:before {
+    width: 24px;
+    height: 11px;
+    color: transparent;
+    border: none;
+    background-color: #ccc;
+    border-radius: 10px;
+    opacity: 1;
+    transition: all 0.2s;
+
+}
+
+.slick-dots li button {
+    box-shadow: none;
+}
+
+.slick-dots li {
+    margin: 10px;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+    background: orange;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	#main {
+		margin-top: 70px;
+	}
+}
